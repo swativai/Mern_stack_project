@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 
 const userSchema = new mongoose.Schema({
   username: {
@@ -23,10 +24,12 @@ const userSchema = new mongoose.Schema({
     default: false,
   },
 });
-
+// This is a Mongoose pre-hook (middleware).
+// It runs before the .save() method is executed on a document.
 userSchema.pre('save', async function (next) {
-  // in pre method we are use this so this contains all current value  we are send in the database
   // console.log("pre method",this);
+  // Inside a schema method, this refers to the document being saved (i.e., the current user object).
+  // this refers to the current document (i.e., the current user).
   const user = this;
   if (!user.isModified('password')) {
     next();
@@ -40,6 +43,31 @@ userSchema.pre('save', async function (next) {
     next(error);
   }
 });
+
+// create a token using instance method
+// create a instance method in mongo db using schema_name.methods.method_name
+
+userSchema.methods.generateToken = async function () {
+  try {
+    return jwt.sign(
+      {
+        userId: this._id.toString,
+        email: this.email,
+        isAdmin: this.isAdmin,
+      },
+      process.env.JWT_SECRET_KEY,
+      {
+        expiresIn: '30d',
+      },
+    );
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+userSchema.methods.comparePassword = async function (password) {
+  return bcrypt.compare(password, this.password);
+};
 
 const User = new mongoose.model('User', userSchema);
 
