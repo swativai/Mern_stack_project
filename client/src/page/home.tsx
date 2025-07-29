@@ -4,12 +4,15 @@ export const Home: React.FC = () => {
   return (
     <div className='min-h-screen'>
       {/* Hero Section */}
-      <section className='bg-gradient-to-br from-indigo-600 via-purple-600 to-purple-800 text-white py-16 lg:py-20 min-h-screen flex items-center'>
+      <section
+        className='bg-gradient-to-br from-[#f5cf83] via-[#fbeac9] to-[#f5cf83]
+ text-black py-16 lg:py-20 min-h-screen flex items-center'
+      >
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full'>
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center'>
             <div className='text-center lg:text-left order-2 lg:order-1'>
               <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 lg:mb-6 leading-tight'>
-                Welcome to SwatiTechnical
+                Welcome to VaidyaTechnical
               </h1>
               <p className='text-lg sm:text-xl md:text-2xl mb-6 lg:mb-8 opacity-90 leading-relaxed max-w-2xl mx-auto lg:mx-0'>
                 Your trusted partner for innovative technical solutions and
@@ -19,7 +22,7 @@ export const Home: React.FC = () => {
                 <button className='bg-indigo-600 hover:bg-indigo-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-indigo-300'>
                   Get Started
                 </button>
-                <button className='border-2 border-white text-white hover:bg-white hover:text-indigo-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50'>
+                <button className='border-2 border-white text-black hover:bg-white hover:text-indigo-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50'>
                   Learn More
                 </button>
               </div>
@@ -27,7 +30,7 @@ export const Home: React.FC = () => {
             <div className='flex justify-center lg:justify-end order-1 lg:order-2'>
               <div className='relative'>
                 <img
-                  src='/public/images/undraw_programming_65t2.png'
+                  src='/images/developer-activity.png'
                   alt='Developer'
                   className='w-full max-w-sm lg:max-w-md h-auto rounded-full shadow-2xl transform hover:scale-105 transition-transform duration-300'
                 />

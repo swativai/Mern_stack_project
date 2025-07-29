@@ -15,12 +15,12 @@ export const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className='bg-indigo-600 shadow-lg sticky top-0 z-50'>
+    <nav className='bg-[#f6c25b] shadow-lg sticky top-0 z-50'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between items-center h-16'>
           <Link
             to='/'
-            className='text-white text-xl sm:text-2xl font-bold hover:text-indigo-200 transition-colors duration-300'
+            className='text-[#460809] text-xl sm:text-2xl font-bold transition-colors duration-300'
           >
             VaidyaTechnical
           </Link>
@@ -32,7 +32,7 @@ export const Navbar: React.FC = () => {
               className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
                 isActive('/')
                   ? 'bg-indigo-700 text-white shadow-md'
-                  : 'text-white hover:bg-indigo-500 hover:text-white hover:shadow-md'
+                  : 'text-[#460809] hover:bg-indigo-500 hover:text-white hover:shadow-md'
               }`}
             >
               Home
@@ -42,7 +42,7 @@ export const Navbar: React.FC = () => {
               className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
                 isActive('/about')
                   ? 'bg-indigo-700 text-white shadow-md'
-                  : 'text-white hover:bg-indigo-500 hover:text-white hover:shadow-md'
+                  : 'text-[#460809] hover:bg-indigo-500 hover:text-white hover:shadow-md'
               }`}
             >
               About
@@ -52,7 +52,7 @@ export const Navbar: React.FC = () => {
               className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
                 isActive('/services')
                   ? 'bg-indigo-700 text-white shadow-md'
-                  : 'text-white hover:bg-indigo-500 hover:text-white hover:shadow-md'
+                  : 'text-[#460809] hover:bg-indigo-500 hover:text-white hover:shadow-md'
               }`}
             >
               Services
@@ -62,7 +62,7 @@ export const Navbar: React.FC = () => {
               className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
                 isActive('/login')
                   ? 'bg-indigo-700 text-white shadow-md'
-                  : 'text-white hover:bg-indigo-500 hover:text-white hover:shadow-md'
+                  : 'text-[#460809] hover:bg-indigo-500 hover:text-white hover:shadow-md'
               }`}
             >
               Login
@@ -72,7 +72,7 @@ export const Navbar: React.FC = () => {
               className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
                 isActive('/registration')
                   ? 'bg-indigo-700 text-white shadow-md'
-                  : 'text-white hover:bg-indigo-500 hover:text-white hover:shadow-md'
+                  : 'text-[#460809] hover:bg-indigo-500 hover:text-white hover:shadow-md'
               }`}
             >
               Registration
@@ -82,7 +82,7 @@ export const Navbar: React.FC = () => {
               className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
                 isActive('/contact')
                   ? 'bg-indigo-700 text-white shadow-md'
-                  : 'text-white hover:bg-indigo-500 hover:text-white hover:shadow-md'
+                  : 'text-[#460809] hover:bg-indigo-500 hover:text-white hover:shadow-md'
               }`}
             >
               Contact

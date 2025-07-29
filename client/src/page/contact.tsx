@@ -34,30 +34,10 @@ export const Contact: React.FC = () => {
     }, 1000);
   };
 
-  const contactInfo = [
-    {
-      title: 'Address',
-      content: '123 Tech Street\nInnovation City, IC 12345',
-    },
-    {
-      title: 'Phone',
-      content: '+1 (555) 123-4567',
-    },
-    {
-      title: 'Email',
-      content: 'info@swatitechnical.com',
-    },
-    {
-      title: 'Business Hours',
-      content:
-        'Monday - Friday: 9:00 AM - 6:00 PM\nSaturday: 10:00 AM - 4:00 PM',
-    },
-  ];
-
   return (
     <div className='min-h-screen'>
       {/* Hero Section */}
-      <section className='bg-gradient-to-br from-indigo-600 via-purple-600 to-purple-800 text-white py-16 lg:py-20'>
+      <section className='bg-gradient-to-br from-[#f5cf83] via-[#fbeac9] to-[#f5cf83]text-white py-16 lg:py-20'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
           <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold mb-4 lg:mb-6'>
             Get In Touch
@@ -75,26 +55,6 @@ export const Contact: React.FC = () => {
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12'>
             {/* Contact Information */}
             <div className='bg-white p-6 lg:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300'>
-              <h2 className='text-2xl sm:text-3xl font-bold text-indigo-600 mb-6 lg:mb-8'>
-                Contact Information
-              </h2>
-
-              <div className='space-y-6'>
-                {contactInfo.map((info, index) => (
-                  <div
-                    key={index}
-                    className='border-b border-gray-200 pb-4 last:border-b-0'
-                  >
-                    <h3 className='text-lg sm:text-xl font-semibold text-gray-900 mb-2'>
-                      {info.title}
-                    </h3>
-                    <p className='text-gray-600 leading-relaxed whitespace-pre-line text-sm sm:text-base'>
-                      {info.content}
-                    </p>
-                  </div>
-                ))}
-              </div>
-
               <div className='mt-8 text-center'>
                 <div className='inline-block p-4 bg-gray-50 rounded-xl'>
                   <img
