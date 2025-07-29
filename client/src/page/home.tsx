@@ -11,10 +11,10 @@ export const Home: React.FC = () => {
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full'>
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center'>
             <div className='text-center lg:text-left order-2 lg:order-1'>
-              <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 lg:mb-6 leading-tight'>
+              <h1 className='text-3xl text-[#380e0f] sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 lg:mb-6 leading-tight'>
                 Welcome to VaidyaTechnical
               </h1>
-              <p className='text-lg sm:text-xl md:text-2xl mb-6 lg:mb-8 opacity-90 leading-relaxed max-w-2xl mx-auto lg:mx-0'>
+              <p className='text-lg sm:text-xl md:text-2xl mb-6 lg:mb-8 opacity-90 leading-relaxed text-[#380e0f] max-w-2xl mx-auto lg:mx-0'>
                 Your trusted partner for innovative technical solutions and
                 development services
               </p>
@@ -45,7 +45,7 @@ export const Home: React.FC = () => {
       <section className='py-16 lg:py-20 bg-gray-50'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='text-center mb-12 lg:mb-16'>
-            <h2 className='text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4'>
+            <h2 className='text-3xl text-[#380e0f] sm:text-4xl md:text-5xl font-bold  mb-4'>
               Our Expertise
             </h2>
             <p className='text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed'>

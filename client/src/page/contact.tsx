@@ -39,10 +39,10 @@ export const Contact: React.FC = () => {
       {/* Hero Section */}
       <section className='bg-gradient-to-br from-[#f5cf83] via-[#fbeac9] to-[#f5cf83]text-white py-16 lg:py-20'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
-          <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold mb-4 lg:mb-6'>
+          <h1 className='text-3xl  text-[#380e0f] sm:text-4xl md:text-5xl font-bold mb-4 lg:mb-6'>
             Get In Touch
           </h1>
-          <p className='text-lg sm:text-xl opacity-90 max-w-3xl mx-auto leading-relaxed'>
+          <p className='text-lg  text-[#380e0f] sm:text-xl opacity-90 max-w-3xl mx-auto leading-relaxed'>
             We'd love to hear from you. Send us a message and we'll respond as
             soon as possible.
           </p>

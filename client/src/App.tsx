@@ -5,6 +5,8 @@ import { Home } from './page/home';
 import { Login } from './page/login';
 import { Registration } from './page/registration';
 import { Contact } from './page/contact';
+import { Service } from './page/service';
+import { About } from './page/about';
 
 function App() {
   return (
@@ -14,8 +16,8 @@ function App() {
           <Navbar />
           <Routes>
             <Route path='/' element={<Home />} />
-            {/* <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} /> */}
+            <Route path='/about' element={<About />} />
+            <Route path='/services' element={<Service />} />
             <Route path='/login' element={<Login />} />
             <Route path='/registration' element={<Registration />} />
             <Route path='/contact' element={<Contact />} />
