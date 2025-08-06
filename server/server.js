@@ -9,7 +9,7 @@ const PORT = 5000;
 app.use(express.json());
 
 app.use('/api/auth', authRouter);
-app.use('/api/fom', contactRouter);
+app.use('/api/form', contactRouter);
 
 connectDb().then(() => {
   app.listen(PORT, () => {

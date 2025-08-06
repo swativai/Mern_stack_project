@@ -1,7 +1,8 @@
 const express = require('express');
-const { home, register, login } = require('../controllers/auth-controller');
+const { authController } = require('../controllers/auth-controller');
 const validate = require('../middlewares/validate-middleware');
 const signupSchema = require('../validators/auth-validator');
+const authMiddleware = require('../middlewares/auth-middleware');
 
 const router = express.Router();
 // first way
@@ -10,10 +11,12 @@ const router = express.Router();
 // });
 
 // second way
-router.route('/').get(home);
+router.route('/').get(authController.home);
 
-router.route('/register').post(validate(signupSchema), register);
+router.route('/register').post(validate(signupSchema), authController.register);
 
-router.route('/login').post(login);
+router.route('/login').post(authController.login);
+
+router.route('/user').get(authMiddleware, authController.user);
 
 module.exports = router;
